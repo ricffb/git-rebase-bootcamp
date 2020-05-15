@@ -1,6 +1,4 @@
-import os, sys
-import tensorflow as tf
-import numpy as np
+import sys
 import random
 
 MSG = [
@@ -24,7 +22,7 @@ def message_builder(name: str) -> str:
 
 
 def better_printer(name):
-    print(MSG[random.randint(0, len(MSG)-1)] + ",", name + "!")
+    print(message_builder(name))
 
 
 if __name__ == '__main__':
