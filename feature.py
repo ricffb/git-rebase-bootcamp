@@ -5,8 +5,8 @@ import random
 
 MSG = [
     "Hello",
-    "Woots up",
-    "Greetngs,"
+    "Whats up",
+    "Greetings,"
 ]
 
 
