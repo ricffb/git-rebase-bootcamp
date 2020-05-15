@@ -9,6 +9,19 @@ MSG = [
     "Greetings,"
 ]
 
+Finalize = [
+    "Have a good day!",
+    "Enjoy life!",
+    "Here are your lemons!"
+]
+
+
+def message_builder(name: str) -> str:
+    greet = MSG[random.randint(0, len(MSG)-1)] + ", "
+    fin = Finalize[random.randint(0, len(Finalize)-1)]
+
+    return greet + name + "!\n" + fin
+
 
 def better_printer(name):
     print(MSG[random.randint(0, len(MSG)-1)] + ",", name + "!")
